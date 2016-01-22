@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -20,61 +20,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-sunny" translatesAutoresizingMaskIntoConstraints="NO" id="hbv-Xh-aSP">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2J-hi-Wz2">
-                                <rect key="frame" x="40" y="440" width="30" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="8Rx-vp-MMP"/>
-                                    <constraint firstAttribute="width" constant="30" id="Mmh-9f-EsJ"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Plf-dN-RCo">
-                                <rect key="frame" x="120" y="440" width="30" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="G5m-DY-Wg2"/>
-                                    <constraint firstAttribute="width" constant="30" id="P4F-jA-lE8"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LHh-Om-G3Y">
-                                <rect key="frame" x="200" y="440" width="30" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="Pea-35-cjr"/>
-                                    <constraint firstAttribute="height" constant="30" id="gLF-bb-Yu0"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="geB-mc-K2d">
-                                <rect key="frame" x="280" y="440" width="30" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="9zE-dG-77e"/>
-                                    <constraint firstAttribute="width" constant="30" id="sy3-IX-ViT"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Plf-dN-RCo" firstAttribute="leading" secondItem="Y2J-hi-Wz2" secondAttribute="trailing" constant="50" id="1e6-J5-VHY"/>
-                            <constraint firstItem="LHh-Om-G3Y" firstAttribute="top" secondItem="Plf-dN-RCo" secondAttribute="top" id="2FU-D7-L2Q"/>
-                            <constraint firstItem="Y2J-hi-Wz2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="8Xq-Lh-nAg"/>
-                            <constraint firstItem="geB-mc-K2d" firstAttribute="top" secondItem="LHh-Om-G3Y" secondAttribute="top" id="DBN-H0-TCu"/>
-                            <constraint firstItem="Plf-dN-RCo" firstAttribute="top" secondItem="Y2J-hi-Wz2" secondAttribute="top" id="G0t-zr-SyZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hbv-Xh-aSP" secondAttribute="bottom" id="GJv-cz-vfu"/>
                             <constraint firstItem="hbv-Xh-aSP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XZJ-WM-HKB"/>
                             <constraint firstAttribute="trailing" secondItem="hbv-Xh-aSP" secondAttribute="trailing" id="adX-eS-DjI"/>
-                            <constraint firstItem="LHh-Om-G3Y" firstAttribute="leading" secondItem="Plf-dN-RCo" secondAttribute="trailing" constant="50" id="hbV-d9-gRJ"/>
                             <constraint firstItem="hbv-Xh-aSP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="j5c-0k-ZdU"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Y2J-hi-Wz2" secondAttribute="bottom" constant="130" id="qDa-MT-S5y"/>
-                            <constraint firstItem="geB-mc-K2d" firstAttribute="leading" secondItem="LHh-Om-G3Y" secondAttribute="trailing" constant="50" id="wPj-ab-CRy"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="view1" destination="Y2J-hi-Wz2" id="9ex-K4-JPH"/>
-                        <outlet property="view2" destination="Plf-dN-RCo" id="HQy-ma-ZsE"/>
-                        <outlet property="view3" destination="LHh-Om-G3Y" id="gjf-09-Mzi"/>
-                        <outlet property="view4" destination="geB-mc-K2d" id="wXJ-f0-dy9"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

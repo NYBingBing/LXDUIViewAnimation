@@ -14,11 +14,6 @@
 @property (nonatomic, strong) UITextField * password;
 @property (nonatomic, strong) UIButton * login;
 
-@property (weak, nonatomic) IBOutlet UIView *view1;
-@property (weak, nonatomic) IBOutlet UIView *view2;
-@property (weak, nonatomic) IBOutlet UIView *view3;
-@property (weak, nonatomic) IBOutlet UIView *view4;
-
 @end
 
 @implementation ViewController
@@ -47,34 +42,16 @@
     [UIView animateWithDuration: 0.5 animations: ^{
         self.userName.center = accountCenter;
     } completion: nil];
-    [UIView animateWithDuration: 0.5 delay: 0.35 options: UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat animations: ^{
+    [UIView animateWithDuration: 0.5 delay: 0.35 options: 0 animations: ^{
         self.password.center = passwordCenter;
     } completion: ^(BOOL finished) {
-        [UIView animateWithDuration: 0.2 animations: ^{
+        [UIView animateWithDuration: 0.2 delay: 0 usingSpringWithDamping: 0.5 initialSpringVelocity: 0 options: 0 animations: ^{
             self.login.alpha = 1;
-        }];
+            CGPoint center = self.login.center;
+            center.y -= 100;
+            self.login.center = center;
+        } completion: nil];
     }];
-    
-    [UIView animateWithDuration: 0.5 delay: 0 options: UIViewAnimationOptionCurveEaseIn animations: ^{
-        CGPoint center = _view1.center;
-        center.y -= 200;
-        _view1.center = center;
-    } completion: nil];
-    [UIView animateWithDuration: 0.5 delay: 0 options: UIViewAnimationOptionCurveEaseInOut animations: ^{
-        CGPoint center = _view2.center;
-        center.y -= 200;
-        _view2.center = center;
-    } completion: nil];
-    [UIView animateWithDuration: 0.5 delay: 0 options: UIViewAnimationOptionCurveEaseOut animations: ^{
-        CGPoint center = _view3.center;
-        center.y -= 200;
-        _view3.center = center;
-    } completion: nil];
-    [UIView animateWithDuration: 0.5 delay: 0 options: UIViewAnimationOptionCurveLinear animations: ^{
-        CGPoint center = _view4.center;
-        center.y -= 200;
-        _view4.center = center;
-    } completion: nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -107,7 +84,7 @@
         _login = [[UIButton alloc] initWithFrame: CGRectMake(0, 0, 120, 30)];
         _login.backgroundColor = [UIColor colorWithRed: 233/255. green: 123/255. blue: 123/255. alpha: 1];
         [_login setTitle: @"login" forState: UIControlStateNormal];
-        _login.center = CGPointMake(self.view.center.x, 300);
+        _login.center = CGPointMake(self.view.center.x, 400);
         _login.alpha = 0;
     }
     return _login;
